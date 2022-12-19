@@ -5,10 +5,12 @@
 
   <head>
     <link rel="stylesheet" href="style.css">
+    <title>Home</title>
+    <script src="multiply.js"> </script>
+
   </head>
 
   <body>
-
     <header>
         <h1>Dhawi's Website</h1>
       </header>
@@ -27,6 +29,23 @@
           <h2>HOMEPAGE</h2>
 
           <p>Hi!!!  Welcome to My Page</p>
+
+          <div class="multiply">
+              <h3>Double a number</h3>
+            <form name="double" method="post">
+              <p>insert a number in the blank and click submit.
+                Then, the answer will be displayed
+              </p>
+              <label>Enter a number : </label>
+              <input type="number" name="num" id = "num" onkeyup="multiply()"/>
+              <p></p>
+              <label>the result is    :</label>
+              <span id="result"></span>
+
+            </form>
+          </div>
+
+
 
         </div>
 

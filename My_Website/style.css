@@ -39,6 +39,25 @@ section{
   padding: 10px;
 }
 
+.multiply{
+  width: 70%;
+  max-width: 450px;
+  padding: 10px;
+  border: 2px solid gray;
+  border-radius: 10px;
+  float:left;
+  margin-top:50px;
+}
+
+h3{
+  background-color: turquoise;
+  color: white;
+  padding: 10px;
+  margin: -10px -10px;
+  text-align:center;
+  border-radius: 10px 10px 0 0;
+}
+
 section {
   display: -webkit-flex;
   display: flex;
