@@ -7,6 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href = "form_style.css">
 </head>
 
 <body>
@@ -48,18 +49,20 @@ function myFunction() {
 <div class="row">
   <h1>CONTACT</h1>
 
-  <div class="side"> 
-    <p>0112342535</p>
-    <p>support@JerungBiru.com</p>
-  </div>
+    <div class="side"> 
+      <div class="abc">
+        <p>0112342535</p>
+        <p>support@JerungBiru.com</p>
+      </div>
+    </div>  
  
   <div class="main">
-    <form name="contact" method="post">
+    <form class="contact" method="post">
       <h1>CONTACT US</h1>
       <p></p>
-      <input type="text" id="name" value="Name">
-      <input type="email" id="email" value="email">
-      <textarea name="msg" id="msg" cols="30" rows="10" value="Message"></textarea>
+      <input type="text" id="name" placeholder="Name">
+      <input type="email" id="email" placeholder="email">
+      <textarea name="msg" id="msg" cols="30" rows="10" placeholder="Message"></textarea>
     </form>
 
   </div>

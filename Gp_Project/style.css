@@ -83,13 +83,13 @@ body {
 /* Create two unequal columns that sits next to each other */
 /* Sidebar/left column */
 .side {
-  flex: 30%;
+  flex: 50%;
   padding: 20px;
 }
 
 /* Main column */
 .main {
-  flex: 70%;
+  flex: 50%;
   padding: 20px;
 }
 
@@ -99,6 +99,7 @@ body {
   width: 100%;
   padding: 20px;
 }
+
 
 /* Footer */
 .footer {
