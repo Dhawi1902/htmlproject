@@ -113,6 +113,13 @@ body {
   background: #ddd;
 }
 
+.barberlistcontent{
+  min-width: 100px; 
+  max-width:100px; 
+  margin-left: 60px;
+
+}
+
 .listbarber {
   background-color: #2252c7 ;
   color: white;
