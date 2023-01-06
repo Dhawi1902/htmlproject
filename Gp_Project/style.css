@@ -3,6 +3,9 @@
   box-sizing: border-box;
 }
 
+h2{
+  font-size: 35px;
+}
 /* Style the body */
 body {
   height: 100%;
