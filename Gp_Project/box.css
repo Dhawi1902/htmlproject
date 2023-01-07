@@ -1,16 +1,31 @@
 .container1 {
     display: flex;
     align-items: center;
-    justify-content: left;
+    justify-content: center;
     background-color: blue;
     border: 3px solid white;
-    width: 90%;
+    width: 1300px;
     height: 130px;
     padding: 20px;
     margin: auto;
     }
 
+    .container3 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: blue;
+        border: 3px solid white;
+        width: 90%;
+        height: 130px;
+        padding: 20px;
+        margin: auto;
+        }
 
+
+
+    
+  
     .container2 {
     background-color: white;
     width: 1300px;
@@ -97,10 +112,12 @@
       }
     
       .text2 {
+        margin-left: 80%;
         color: white;
         font-size: 24px;
         float: right;
         flex: 10%;
+
       }
       
   
