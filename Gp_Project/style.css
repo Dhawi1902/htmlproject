@@ -25,14 +25,8 @@ body {
   background-image: linear-gradient(to bottom right, #004aad, black);
 }
 
-.topnav a.active {
-  background-color: #04AA6D;
-  color: white;
-}
 
-.navbar .icon{
-  display: none;
-}
+
 
 .home{
   flex: 100%;

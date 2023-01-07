@@ -28,6 +28,10 @@
     color: white;
   }
   
+  .navbar .icon{
+    display: none;
+  }
+
   /* Change color on hover */
   .navbar a:hover {
     background-color: #ddd;
