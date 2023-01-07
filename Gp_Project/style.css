@@ -79,6 +79,10 @@ body {
   background: #ddd;
 }
 
+<<<<<<< HEAD
+.checked {
+  color: orange;
+=======
 .barberlistcontent{
   min-width: 100px; 
   max-width:100px; 
@@ -92,6 +96,7 @@ body {
   height: 125px;
   padding: 50px;
   margin: 0 auto;
+>>>>>>> 555bd286df3f58dedb55545321c452268d9d6304
 }
 
 /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
