@@ -2,15 +2,99 @@
 <html>
 
 <head>
-<title>Barber Profile</title>
+<title>Barber Profile Review</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="style.css">
-<link rel="stylesheet" href="navigation.css">
-<link rel="stylesheet" href="box.css">
+
+<style>
+  
+  .container1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: blue;
+  border: 3px solid white;
+  width: 1300px;
+  height: 130px;
+  padding: 20px;
+  margin: 100px;
+  }
+
+  .container2 {
+  background-color: white;
+  width: 1300px;
+  height: 400px;
+  padding: 20px;
+  margin: 100px;
+  }
+
+  .buttonservices:link, .buttonservices:visited {
+  background-color: rgb(0, 189, 252);
+  color:black;
+  border:solid 2px black;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  position:relative;
+  right:150px; 
+  top:10px;
+  height:50px; 
+  width:230px; 
+  font-size:25px; 
+  line-height: 20px;
+  }
+
+  .buttonservices:hover, .buttonservices:active {
+  background-color: blue;
+  }
+
+  .buttonreview:link, .buttonreview:visited {
+  background-color: rgb(0, 189, 252);
+  color:black;
+  border:solid 2px black;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  position:relative;
+  right:0px; 
+  top:10px;
+  height:50px; 
+  width:230px; 
+  font-size:25px; 
+  line-height: 20px;
+  }
+
+  .buttonreview:hover, .buttonreview:active {
+  background-color: blue;
+  }
+
+  .buttonabout:link, .buttonabout:visited {
+  background-color: rgb(0, 189, 252);
+  color:black;
+  border:solid 2px black;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  position:relative;
+  left:150px; 
+  top:10px;
+  height:50px; 
+  width:230px; 
+  font-size:25px; 
+  line-height: 20px;
+  }
+
+  .buttonabout:hover, .buttonabout:active {
+  background-color: blue;
+  }
 
 
+</style>
 
 </head>
 
@@ -19,19 +103,20 @@
 <div class="row">
   <div class="header">
     <h1> <img src="logo2.png" style="min-width: 100px; max-width:100px; margin-bottom: -30px;"> JERUNG BIRU INC</h1>
+
+
+    <!-- Navigation Bar -->
+
   </div>
 
   <div class="navbar" id="navbar">
-    <ul>
-      <li><a href="home.html">HOME</a></li>
-      <li><a href="barber_list.html">STAFF</a></li>
-      <li><a href="service_list.html">SERVICES</a></li>
-      <li><a href="Contact.html">CONTACT</a></li>
-      <li><a href="javascript:void(0);" class="icon" onclick="myFunction()">
-        <i class="fa fa-bars"></i>
-      </a></li>
-    </ul>
- 
+    <a href="home.html">HOME</a>
+    <a href="barber_list.html">STAFF</a>
+    <a href="service_list.html">SERVICES</a>
+    <a href="Contact.html">CONTACT</a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
   </div>
 
 </div>
@@ -63,7 +148,7 @@ function myFunction() {
         <span class="fa fa-star checked"></span>
         <span class="fa fa-star checked"></span>
         <span class="fa fa-star checked"></span>
-        <span class="fa fa-star "></span>
+        <span class="fa fa-star checked"></span>
         <span class="fa fa-star"></span>
       </p>
     </div>

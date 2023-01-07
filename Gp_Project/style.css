@@ -3,6 +3,11 @@
   box-sizing: border-box;
 }
 
+h2{
+  font-size: 30px;
+  margin-right: 950px;
+  margin-top: 45px;
+}
 /* Style the body */
 body {
   height: 100%;
@@ -18,15 +23,6 @@ body {
   margin: 0;
   background-color: #004aad;
   background-image: linear-gradient(to bottom right, #004aad, black);
-}
-
-.topnav a.active {
-  background-color: #04AA6D;
-  color: white;
-}
-
-.navbar .icon{
-  display: none;
 }
 
 .home{
@@ -49,9 +45,9 @@ body {
 }
 
 .pagetittle{
-  padding-left: 10%;
   color: white;
   font-size: xx-large;
+  text-align: center;
 }
 /* Create two unequal columns that sits next to each other */
 /* Sidebar/left column */
@@ -71,7 +67,7 @@ body {
   background-color: #004aad;
   color: white;
   height:100%;
-  width: 80%;
+  width: 60%;
   padding: 30px;
 }
 
@@ -81,6 +77,10 @@ body {
   padding: 20px;
   text-align: center;
   background: #ddd;
+}
+
+.checked {
+  color: orange;
 }
 
 /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
