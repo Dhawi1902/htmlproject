@@ -91,9 +91,7 @@ body {
 .barberlistcontent{
   min-width: 100px; 
   max-width:100px; 
-  margin-left: 60px;
-  object-position: left top;
-
+  margin: auto ;
 }
 
 .listbarber {
@@ -102,7 +100,6 @@ body {
   width: 70%;
   height: 125px;
   padding: 50px;
-  align-self: center;
   margin: 0 auto;
 }
 
