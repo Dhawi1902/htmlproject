@@ -1,7 +1,7 @@
 
 /* Header/logo Title */
 .header {
-    flex: 60%;
+    flex: 50%;
     padding: 20px;
     padding-left: 100px;
     text-align: left;
@@ -11,7 +11,7 @@
   /* Style the top navigation bar */
   .navbar {
     padding-top: 50px;
-    flex: 40%;
+    flex: 50%;
     overflow: hidden;
   }
   
@@ -44,9 +44,9 @@
     .header{
       padding-left: 5px;
     }
-    .header h1{
+    /* .header h1{
       font-size: smaller;
-    }
+    } */
     .navbar a{display: none;}
     .navbar a.icon {
       float: right;
@@ -69,7 +69,6 @@
       top: 0;
     }
     .navbar.responsive a {
-      float: none;
       display: block;
       text-align: center;
     }
