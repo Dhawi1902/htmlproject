@@ -1,13 +1,13 @@
 .container1 {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: left;
     background-color: blue;
     border: 3px solid white;
-    width: 1300px;
+    width: 90%;
     height: 130px;
     padding: 20px;
-    margin: 100px;
+    margin: auto;
     }
 
 
@@ -81,4 +81,26 @@
     .buttonabout:hover, .buttonabout:active {
     background-color: blue;
     }
+
+    .text {
+        color: white;
+        font-size: 24px;
+        flex: 5%;
+        padding: 20px;
+      }
+    
+      .text1 {
+        color: white;
+        font-size: 24px;
+        flex: 70%;
+        padding: 20px;
+      }
+    
+      .text2 {
+        color: white;
+        font-size: 24px;
+        float: right;
+        flex: 10%;
+      }
+      
   
