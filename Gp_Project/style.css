@@ -24,6 +24,7 @@ body {
   margin: 0;
   background-color: #004aad;
   background-image: linear-gradient(to bottom right, #004aad, black);
+  padding: 20px;
 }
 
 .home{
@@ -84,7 +85,11 @@ body {
   color: orange;
 }
 
+.image{
+  flex: 10%;
+}
 .textwe{
+  flex: 80%;
   color: white;
   font-size: 30px;
   text-align: left;
