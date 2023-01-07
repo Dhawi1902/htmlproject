@@ -9,7 +9,15 @@
 <link rel="stylesheet" href="style.css">
 <link rel="stylesheet" href="navigation.css">
 <link rel="stylesheet" href="box.css">
-
+<link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="https://jqueryui.com/resources/demos/style.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+  <script>
+    $( function() {
+      $( "#tabs" ).tabs();
+    } );
+    </script>
 
 
 </head>
@@ -74,15 +82,40 @@ function myFunction() {
   <div class="container2" style = "position:relative; top:-100px;">
 
 
-    <div class="groupbutton" style="background-color:lightgrey; height:70px; width:1255px;">
 
-    <a href="barber_profile_services.html" class="buttonservices">SERVICES</a>
-    <a href="barber_profile_review.html" class="buttonreview">REVIEW</a>
-    <a href="barber_profile_about.html" class="buttonabout">ABOUT</a>
-      
+    <div id="tabs">
+      <ul>
+        <li><a href="#tabs-1">Services</a></li>
+        <li><a href="#tabs-2">Review</a></li>
+        <li><a href="#tabs-3">About</a></li>
+      </ul>
+      <div id="tabs-1">
+        <div style="color:black;">
+
+          <p>HAIRCUT - RM25</p>
+          <p>HAIR WASH - RM10</p>
+          <p>BEARD TRIM - RM5</p>
+  
+          </div>
+      </div>
+      <div id="tabs-2">
+        <p>Morbi tincidunt, dui sit amet facilisis feugiat, odio metus gravida ante, ut pharetra massa metus id nunc. Duis scelerisque molestie turpis. Sed fringilla, massa eget luctus malesuada, metus eros molestie lectus, ut tempus eros massa ut dolor. Aenean aliquet fringilla sem. Suspendisse sed ligula in ligula suscipit aliquam. Praesent in eros vestibulum mi adipiscing adipiscing. Morbi facilisis. Curabitur ornare consequat nunc. Aenean vel metus. Ut posuere viverra nulla. Aliquam erat volutpat. Pellentesque convallis. Maecenas feugiat, tellus pellentesque pretium posuere, felis lorem euismod felis, eu ornare leo nisi vel felis. Mauris consectetur tortor et purus.</p>
+      </div>
+      <div id="tabs-3">
+        <div style="color:black;">
+
+          <p>INSTAGRAM : www.instagram.com/_alifu_</p>
+          <p>WHATSAPP  : www.wasap.my/6012345678</p>
+          <p>FACEBOOK  : www.facebook.com/LipJiq</p>
+  
+          </div>
+      </div>
     </div>
 
   </div>
+
+
+
 
   
 
