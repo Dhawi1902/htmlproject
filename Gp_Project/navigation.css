@@ -3,21 +3,20 @@
 .header {
     flex: 50%;
     padding: 20px;
-    padding-left: 100px;
-    text-align: left;
+    text-align: center;
     color: white;
   }
   
   /* Style the top navigation bar */
   .navbar {
-    padding-top: 50px;
+    padding: 40px;
     flex: 50%;
     overflow: hidden;
   }
   
   .navbar li{
     list-style-type: none;
-    float: left;
+    float:  left;
   }
   /* Style the navigation bar links */
   .navbar a {
@@ -38,15 +37,12 @@
   
 /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 700px) {
-    .navbar {
-      flex-direction: column;
-    }
+
     .header{
+      float: left;
       padding-left: 5px;
     }
-    /* .header h1{
-      font-size: smaller;
-    } */
+   
     .navbar a{display: none;}
     .navbar a.icon {
       float: right;
@@ -58,10 +54,7 @@
   }
   
   @media screen and (max-width: 700px) {
-    .navbar {
-      flex-direction: column;
-    }
-  
+
     .navbar.responsive {position: relative;}
     .navbar.responsive .icon {
       position: absolute;
