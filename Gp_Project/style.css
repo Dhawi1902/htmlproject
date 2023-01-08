@@ -47,6 +47,10 @@ body {
 }
 
 .pagetittle{
+  margin: auto;
+  width: 80%;
+  height: max-content;
+  padding-bottom: 20px;
   color: white;
   font-size: xx-large;
   text-align: center;
