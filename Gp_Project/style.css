@@ -12,13 +12,13 @@ h2{
 body {
   width: 100%;
   /* Set the height to match that of the viewport. */
-  height: 100vh;
+  
+  min-height: 100vh;
+  height: max-content;
 
 /* Set the width to match that of the viewport. */
   width: 100vw;
 
-  
-  max-height : max-content;
 /* Remove any browser-default margins. */
   font-family: Arial;
   margin: 0;
@@ -106,9 +106,7 @@ body {
 
 /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 700px) {
-  body{
-    height: max-content;
-  }
+
   .row {
     flex-direction: column;
   }
