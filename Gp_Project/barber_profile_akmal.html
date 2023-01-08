@@ -10,18 +10,20 @@
 <link rel="stylesheet" href="style.css">
 <link rel="stylesheet" href="navigation.css">
 <link rel="stylesheet" href="box.css">
+<link rel="stylesheet" href="review.css">
 <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
-  <link rel="stylesheet" href="https://jqueryui.com/resources/demos/style.css">
-  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
-  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
-  <script>
+<link rel="stylesheet" href="https://jqueryui.com/resources/demos/style.css">
+<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+<script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+<script src="navigation.js"></script>
+<script>
     $( function() {
       $( "#tabs" ).tabs();
       $("#tabs").css("width: 100%");
     } );
 
 
-    </script>
+</script>
 
 </head>
 
@@ -47,15 +49,6 @@
   </div>
 <!-- Header -->
 
-<script>
-function myFunction() {
-  var x = document.getElementById("navbar");
-  if (x.className === "navbar") {
-    x.className += " responsive";
-  } else {
-    x.className = "navbar";
-  }
-}
 </script>
 
   <div class="pagetittle" >
@@ -108,8 +101,61 @@ function myFunction() {
         </div>
       </div>
       <div id="tabs-2">
-        <p>Morbi tincidunt, dui sit amet facilisis feugiat, odio metus gravida ante, ut pharetra massa metus id nunc. Duis scelerisque molestie turpis. Sed fringilla, massa eget luctus malesuada, metus eros molestie lectus, ut tempus eros massa ut dolor. Aenean aliquet fringilla sem. Suspendisse sed ligula in ligula suscipit aliquam. Praesent in eros vestibulum mi adipiscing adipiscing. Morbi facilisis. Curabitur ornare consequat nunc. Aenean vel metus. Ut posuere viverra nulla. Aliquam erat volutpat. Pellentesque convallis. Maecenas feugiat, tellus pellentesque pretium posuere, felis lorem euismod felis, eu ornare leo nisi vel felis. Mauris consectetur tortor et purus.</p>
-      </div>
+        
+        
+
+        <div class="row">
+          <div class="container side">
+
+
+            <input type="text" id="inputname" placeholder="write your name here">
+            <br>
+            <input type="text" id="input" placeholder="write your text here">
+            <br>
+            <button type="button" name="button" id="cancel">cancel</button>
+            <button type="button" name="button" id="comment">comment</button>
+    
+              <div class="box-container">
+                <div class="box" ></div>
+            
+              </div>
+            </div>
+
+            <div class="main">
+              <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRym4raqIJA3jML_fzRyF_x-oNm4F8VsC_9GajCewo5dRIUfQ5DgbRhpr-6JvD8erXD3FrdfKNWWvXT/pubhtml?gid=1880226979&amp;single=true&amp;widget=true&amp;headers=false"></iframe>
+              <a href="https://docs.google.com/spreadsheets/d/e/2PACX-1vRym4raqIJA3jML_fzRyF_x-oNm4F8VsC_9GajCewo5dRIUfQ5DgbRhpr-6JvD8erXD3FrdfKNWWvXT/pubhtml?gid=1880226979&amp;single=true&amp;widget=true&amp;headers=false">
+                <i class="fa fa-file-excel-o"></i>Complete review here</a>
+            </div>
+            
+        </div>
+        
+      
+          <script>
+              $(document).ready(function(){
+  
+                  $('#comment').click(function(){
+                      var inputname = $('#inputname').val();
+                      $('.box').append(inputname + ':');
+                      $('#inputname').val('');
+                      $('.box-container').slideDown();
+                  });
+                 
+                  $('#comment').click(function(){
+                      var input = $('#input').val();
+                      $('.box').append(input + '<br>');
+                      $('#input').val('');
+                      $('.box-container').slideDown();
+                  });
+  
+                  $('#cancel').click(function(){
+                      $('input').val('');
+                  });
+  
+              
+              });
+              </script>
+            
+            
       <div id="tabs-3">
         <div class="list">
           <a href="www.instagram.com/akmxlsz"> <i class="fa fa-instagram"></i> INSTAGRAM : @akmxlsz </a>
@@ -126,9 +172,9 @@ function myFunction() {
           
           
       </div>
-    </div>
+    
 
-  </div>
+  
 
 
 
@@ -142,5 +188,3 @@ function myFunction() {
 
 
 
-</body>
-</html>
