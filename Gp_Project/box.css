@@ -9,7 +9,10 @@
   padding: 13px;
   margin: auto;
   }
-
+  .container1 i{
+    color: white;
+    font-size: xx-large;
+  }
   .container3 {
   display: flex;
   align-items: center;
@@ -44,12 +47,13 @@
     display: inline-block;
     text-decoration: none;
     text-align: left;
+    
   }
   .list a:hover{
     color: blueviolet;
   }
   .list a:visited{
-    color: cyan;
+    color: black;
   }
 
   .text1 {
