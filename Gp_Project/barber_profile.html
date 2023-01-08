@@ -16,10 +16,7 @@
   <script>
     $( function() {
       $( "#tabs" ).tabs();
-      $("#tabs").css("width: 100%");
     } );
-
-
     </script>
 
 
@@ -59,19 +56,18 @@ function myFunction() {
 }
 </script>
 
-  <div class="pagetittle" >
-    <h1>BARBER PROFILE</h1>
-
-  </div>  
-
+<!-- The flexible grid (content) -->
+<div class="home"  style = "position:relative; top:-140px;">
+  <h1 style = "position:relative; top:58px;">BARBER PROFILE</h1>
+  
   <div class="container1">
 
-    <div class="image" style="flex: 10%;">
+    <div class="image" style = "position:relative; left:-345px; top:2px;">
       <img src="lipjiq.jpg" alt="Avatar" style="min-width: 100px; max-width:100px; border-radius:50%; width:200px; ">
     </div>
 
-    <div class="textwe" style="flex: 90%;">
-      <p>Alif Haziq <br>4.0 
+    <div class="textwe" style = "position:relative; left:-380px; top:1px; font-size: 30px;">
+      <p>Alif Haziq <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4.0 
         <span class="fa fa-star checked"></span>
         <span class="fa fa-star checked"></span>
         <span class="fa fa-star checked"></span>
@@ -83,36 +79,36 @@ function myFunction() {
   </div>
 
 
-  <div class="container2" style = "position:relative; ">
+  <div class="container2" style = "position:relative; top:-100px;">
 
 
 
-    <div id="tabs"  style="width: 100%">
+    <div id="tabs">
       <ul>
         <li><a href="#tabs-1">Services</a></li>
         <li><a href="#tabs-2">Review</a></li>
         <li><a href="#tabs-3">About</a></li>
       </ul>
       <div id="tabs-1">
-        <div class="list">
+        <div style="color:black;">
+
           <p>HAIRCUT - RM25</p>
-        </div>
-        
-        <div class="list">
           <p>HAIR WASH - RM10</p>
-        </div>
-        
-        <div class="list" style="border-bottom: none;">
           <p>BEARD TRIM - RM5</p>
-        </div>
+  
+      </div>
       </div>
       <div id="tabs-2">
         <p>Morbi tincidunt, dui sit amet facilisis feugiat, odio metus gravida ante, ut pharetra massa metus id nunc. Duis scelerisque molestie turpis. Sed fringilla, massa eget luctus malesuada, metus eros molestie lectus, ut tempus eros massa ut dolor. Aenean aliquet fringilla sem. Suspendisse sed ligula in ligula suscipit aliquam. Praesent in eros vestibulum mi adipiscing adipiscing. Morbi facilisis. Curabitur ornare consequat nunc. Aenean vel metus. Ut posuere viverra nulla. Aliquam erat volutpat. Pellentesque convallis. Maecenas feugiat, tellus pellentesque pretium posuere, felis lorem euismod felis, eu ornare leo nisi vel felis. Mauris consectetur tortor et purus.</p>
       </div>
       <div id="tabs-3">
+        <div style="color:black;">
+
           <p>INSTAGRAM : www.instagram.com/_alifu_</p>
           <p>WHATSAPP  : www.wasap.my/6012345678</p>
           <p>FACEBOOK  : www.facebook.com/LipJiq</p>
+  
+      </div>
       </div>
     </div>
 
@@ -128,6 +124,7 @@ function myFunction() {
 
 
 
+</div>
 
 
 </body>
