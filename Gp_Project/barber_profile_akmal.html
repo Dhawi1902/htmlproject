@@ -2,10 +2,11 @@
 <html>
 
 <head>
-<title>Barber Profile</title>
+<title>Barber Profile Akmal</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 <link rel="stylesheet" href="style.css">
 <link rel="stylesheet" href="navigation.css">
 <link rel="stylesheet" href="box.css">
@@ -22,30 +23,28 @@
 
     </script>
 
-
 </head>
 
 <body>
 
-<div class="row">
-  <div class="header">
-    <h1> <img src="logo2.png" style="min-width: 100px; max-width:100px; margin-bottom: -30px;"> JERUNG BIRU INC</h1>
+  <div class="row">
+    <div class="header">
+      <h1> <img src="logo2.png" style="min-width: 100px; max-width:100px; margin-bottom: -30px;"> JERUNG BIRU INC</h1>
+    </div>
+  
+    <div class="navbar" id="navbar">
+      <ul>
+        <li><a href="home.html">HOME</a></li>
+        <li><a href="barber_list.html">STAFF</a></li>
+        <li><a href="Contact.html">CONTACT</a></li>
+        <li><a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="material-icons">menu</i>
+        </a></li>
+      </ul>
+   
+    </div>
+  
   </div>
-
-  <div class="navbar" id="navbar">
-    <ul>
-      <li><a href="home.html">HOME</a></li>
-      <li><a href="barber_list.html">STAFF</a></li>
-      <li><a href="service_list.html">SERVICES</a></li>
-      <li><a href="Contact.html">CONTACT</a></li>
-      <li><a href="javascript:void(0);" class="icon" onclick="myFunction()">
-        <i class="fa fa-bars"></i>
-      </a></li>
-    </ul>
- 
-  </div>
-
-</div>
 <!-- Header -->
 
 <script>
@@ -65,25 +64,27 @@ function myFunction() {
   </div>  
 
   <div class="container1">
-
     <div class="image" style="flex: 10%;">
       <img src="akmal.jpg" alt="Avatar" style="min-width: 100px; max-width:100px; border-radius:50%; width:200px; ">
     </div>
 
-    <div class="textwe" style="flex: 90%;">
-      <p>Akmal Rahimey <br>4.0 
-        <span class="fa fa-star checked"></span>
-        <span class="fa fa-star checked"></span>
-        <span class="fa fa-star checked"></span>
-        <span class="fa fa-star checked"></span>
-        <span class="fa fa-star"></span>
-      </p>
+    <div class="row" style="flex: 90%;">
+      <div class="textwe">
+        <p>Akmal Rahimey <br>5.0 
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+        </p>
+      </div>
+  
+      <div class="appointment"> <a href="akmal.jpg"> Make Appointment!</a></div>
     </div>
-
   </div>
 
 
-  <div class="container2" style = "position:relative; ">
+  <div class="container2">
 
 
 
@@ -95,7 +96,7 @@ function myFunction() {
       </ul>
       <div id="tabs-1">
         <div class="list">
-          <p>HAIRCUT - RM25</p>
+          <p>HAIRCUT - RM15</p>
         </div>
         
         <div class="list">
@@ -103,16 +104,27 @@ function myFunction() {
         </div>
         
         <div class="list" style="border-bottom: none;">
-          <p>BEARD TRIM - RM5</p>
-        </div>
+          <p>BEARD TRIM - RM4</p>
+        </div>
       </div>
       <div id="tabs-2">
         <p>Morbi tincidunt, dui sit amet facilisis feugiat, odio metus gravida ante, ut pharetra massa metus id nunc. Duis scelerisque molestie turpis. Sed fringilla, massa eget luctus malesuada, metus eros molestie lectus, ut tempus eros massa ut dolor. Aenean aliquet fringilla sem. Suspendisse sed ligula in ligula suscipit aliquam. Praesent in eros vestibulum mi adipiscing adipiscing. Morbi facilisis. Curabitur ornare consequat nunc. Aenean vel metus. Ut posuere viverra nulla. Aliquam erat volutpat. Pellentesque convallis. Maecenas feugiat, tellus pellentesque pretium posuere, felis lorem euismod felis, eu ornare leo nisi vel felis. Mauris consectetur tortor et purus.</p>
       </div>
       <div id="tabs-3">
-          <p>INSTAGRAM : www.instagram.com/_alifu_</p>
-          <p>WHATSAPP  : www.wasap.my/6012345678</p>
-          <p>FACEBOOK  : www.facebook.com/LipJiq</p>
+        <div class="list">
+          <a href="www.instagram.com/akmxlsz"> <i class="fa fa-instagram"></i> INSTAGRAM : @akmxlsz </a>
+        </div>
+        
+        <div class="list">
+          <a href="www.wasap.my/60123456789"> <i class="fa fa-whatsapp"></i> WHATSAPP :60123456789</a>
+        </div>
+        
+        <div class="list" style="border-bottom: none;">
+          <a href="www.facebook.com/akmxlsz"> <i class="fa fa-facebook-square"></i> FACEBOOK  : @akmxlsz</a>
+        </div>
+          
+          
+          
       </div>
     </div>
 

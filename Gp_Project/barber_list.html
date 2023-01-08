@@ -5,8 +5,8 @@
 <title>Barber List</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
 <link rel="stylesheet" href="style.css">
 <link rel="stylesheet" href="navigation.css">
 <link rel="stylesheet" href="box.css">
@@ -23,10 +23,9 @@
       <ul>
         <li><a href="home.html">HOME</a></li>
         <li><a href="barber_list.html">STAFF</a></li>
-        <li><a href="service_list.html">SERVICES</a></li>
         <li><a href="Contact.html">CONTACT</a></li>
         <li><a href="javascript:void(0);" class="icon" onclick="myFunction()">
-          <i class="fa fa-bars"></i>
+          <i class="material-icons">menu</i>
         </a></li>
       </ul>
    
@@ -49,7 +48,52 @@
   <!-- The flexible grid (content) -->
     <div class="pagetittle" >
       <h1>BARBER PROFILE</h1>
-    </div>  
+    
+    </div>
+      <div class="search">
+          <input type="text" id="myInput" onkeyup="myFunction1()" placeholder="Search for names..">
+      </div>  
+      <div class="search">
+        <ul id="myUL">
+            <li><a href="barber_profile_lipjiq.html">lipjiq</a></li>
+           <li><a href="barber_profile_akmal.html">akmal</a></li>
+           <li><a href="barber_profile_manjoe.html">manjoe</a></li>
+         </ul>
+      </div>
+        
+
+      
+      <script>
+        $("#myUL").hide();
+        function myFunction1() {
+          // Declare variables
+          var input, filter, ul, li, a, i, txtValue;
+          input = document.getElementById('myInput');
+          filter = input.value.toUpperCase();
+          ul = document.getElementById("myUL");
+          li = ul.getElementsByTagName('li');
+        // Loop through all list items, and hide those who don't match the search 
+        
+        for (i = 0; i < li.length; i++) {
+            a = li[i].getElementsByTagName("a")[0];
+           txtValue = a.textContent || a.innerText;
+           
+           if (txtValue.toUpperCase().indexOf(filter) > -1) {
+             li[i].style.display = "";
+             $("#myUL").show();
+             }
+             else {
+                li[i].style.display = "none";
+            }
+
+            if(input.value==""){
+            $("#myUL").hide();
+           }
+          }
+        }
+        </script>
+
+    
     <div class="container1">
 
       <div class="image">
@@ -67,7 +111,11 @@
       </div>
   
       <div>
+<<<<<<< HEAD
         <i class="material-icons" style="color: white;">&#xe5cc;</i>
+=======
+        <i class="material-icons">keyboard_arrow_right</i>
+>>>>>>> 8f375de019019d3737f21dbfae3d8477a1c4b649
       </div>
     </div><br>
   
@@ -88,7 +136,11 @@
       </div>
   
       <div>
+<<<<<<< HEAD
         <i class="material-icons" style="color: white;">&#xe5cc;</i>
+=======
+        <i class="material-icons">keyboard_arrow_right</i>
+>>>>>>> 8f375de019019d3737f21dbfae3d8477a1c4b649
       </div>
     </div><br>
 
@@ -109,7 +161,11 @@
       </div>
   
       <div>
+<<<<<<< HEAD
         <i class="material-icons" style="color: white;">&#xe5cc;</i>
+=======
+        <i class="material-icons">keyboard_arrow_right</i>
+>>>>>>> 8f375de019019d3737f21dbfae3d8477a1c4b649
       </div>
     </div><br>
   
