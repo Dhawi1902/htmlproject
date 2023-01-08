@@ -39,6 +39,19 @@
   border-bottom: 2px solid grey;
   }
 
+  .list a{
+    padding-top: 20px;
+    display: inline-block;
+    text-decoration: none;
+    text-align: left;
+  }
+  .list a:hover{
+    color: blueviolet;
+  }
+  .list a:visited{
+    color: cyan;
+  }
+  
   .text1 {
   color: white;
   font-size: 24px;

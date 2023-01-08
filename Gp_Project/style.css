@@ -99,6 +99,7 @@ body {
 }
 .textwe{
   flex: 80%;
+  padding-left: 16px;
   color: white;
   font-size: 30px;
   text-align: left;
