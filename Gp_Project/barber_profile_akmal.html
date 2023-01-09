@@ -16,15 +16,39 @@
 <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
 <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
 <script src="navigation.js"></script>
-<script>
+<!-- <script>
     $( function() {
-      $( "#tabs" ).tabs();
-      $("#tabs").css("width: 100%");
     } );
 
 
 </script>
+ -->
+<script>
+  $(document).ready(function(){
+  
+    $( "#tabs" ).tabs();
+    $("#tabs").css("width: 100%");
 
+    $('#comment').click(function(){
+      var inputname = $('#inputname').val();
+      $('.box').append(inputname + ':');
+      $('#inputname').val('');
+      $('.box-container').slideDown();
+    });
+     
+    $('#comment').click(function(){
+     var input = $('#input').val();
+     $('.box').append(input + '<br>');
+     $('#input').val('');
+     $('.box-container').slideDown();
+    });
+
+    $('#cancel').click(function(){
+      $('input').val('');
+    });
+   
+  });
+  </script>
 </head>
 
 <body>
@@ -128,53 +152,24 @@
             </div>
             
         </div>
+      </div>     
         
-      
-          <script>
-              $(document).ready(function(){
-  
-                  $('#comment').click(function(){
-                      var inputname = $('#inputname').val();
-                      $('.box').append(inputname + ':');
-                      $('#inputname').val('');
-                      $('.box-container').slideDown();
-                  });
-                 
-                  $('#comment').click(function(){
-                      var input = $('#input').val();
-                      $('.box').append(input + '<br>');
-                      $('#input').val('');
-                      $('.box-container').slideDown();
-                  });
-  
-                  $('#cancel').click(function(){
-                      $('input').val('');
-                  });
-  
-              
-              });
-              </script>
-            
-            
       <div id="tabs-3">
         <div class="list">
-          <a href="https://instagram.com/_alifu_?igshid=NDk5N2NlZjQ="> <i class="fa fa-instagram"></i> INSTAGRAM : @_alifu_ </a>
-        </div>
-        
-        <div class="list">
-          <a href="https://wa.me/01110179069"> <i class="fa fa-whatsapp"></i> WHATSAPP : 011-10179069</a>
-        </div>
-        
-        <div class="list" style="border-bottom: none;">
-          <a href="https://www.facebook.com/alif.razmi"> <i class="fa fa-facebook-square"></i> FACEBOOK  : Alif Razmi</a>
-        </div>
+            <a href="https://www.instagram.com/akmxlsz/"> <i class="fa fa-instagram"></i> INSTAGRAM : @akmxlsz </a>
+          </div>
           
+          <div class="list">
+            <a href="https://wa.me/0177578337"> <i class="fa fa-whatsapp"></i> WHATSAPP : 017-757 8337</a>
+          </div>
           
-      </div> 
+          <div class="list" style="border-bottom: none;">
+            <a href="https://www.facebook.com/alif.razmi"> <i class="fa fa-facebook-square"></i> FACEBOOK  : Alif Razmi</a>
+          </div>
+            
+            
+        </div> 
     </div>
-
-  </div>
-
 </body>
 </html>
     
