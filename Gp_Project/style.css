@@ -10,7 +10,6 @@ h2{
 }
 /* Style the body */
 body {
-  width: 100%;
   /* Set the height to match that of the viewport. */
   
   min-height: 100vh;
@@ -18,13 +17,18 @@ body {
 
 /* Set the width to match that of the viewport. */
   width: 100vw;
+  max-width: 100%;
 
 /* Remove any browser-default margins. */
   font-family: Arial;
   margin: 0;
-  background-color: #004aad;
-  background-image: linear-gradient(to bottom right, #004aad, black);
   padding: 20px;
+
+  /* set backgrounf image */
+  background-image: url('background1.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
 }
 
 .home{
@@ -55,7 +59,8 @@ body {
   font-size: xx-large;
   text-align: center;
 }
-/* Create two unequal columns that sits next to each other */
+
+/* Create two equal columns that sits next to each other */
 /* Sidebar/left column */
 .side {
   flex: 50%;
@@ -111,22 +116,12 @@ body {
   text-align: left;
 }
 
-  body {
-    background-image: url('background1.jpg');
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: 100% 100%;
-  }
-
   .arrow3:hover{
     background-color: rgb(70, 63, 208);
   }
 
 
 #myInput{
-   background-image: url('/css/searchicon.png');/* Add a search icon to input */
-   background-position: 10px 12px;/* Position the search icon */
-    background-repeat:no-repeat;/* Do not repeat the icon image */
     width:100%;/* Full-width */
     font-size:16px;/* Increase font-size */
     padding:12px 20px 12px 40px;/* Add some padding */
