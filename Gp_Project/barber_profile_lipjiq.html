@@ -22,6 +22,31 @@
     } );
     </script>
 
+    <script>
+              $(document).ready(function(){
+  
+                  $('#comment').click(function(){
+                      var inputname = $('#inputname').val();
+                      $('.box').append(inputname + ':');
+                      $('#inputname').val('');
+                      $('.box-container').slideDown();
+                  });
+                 
+                  $('#comment').click(function(){
+                      var input = $('#input').val();
+                      $('.box').append(input + '<br>');
+                      $('#input').val('');
+                      $('.box-container').slideDown();
+                  });
+  
+                  $('#cancel').click(function(){
+                      $('input').val('');
+                  });
+  
+              
+              });
+              </script>
+
 
 </head>
 
@@ -123,30 +148,7 @@
         </div>
         
       
-          <script>
-              $(document).ready(function(){
-  
-                  $('#comment').click(function(){
-                      var inputname = $('#inputname').val();
-                      $('.box').append(inputname + ':');
-                      $('#inputname').val('');
-                      $('.box-container').slideDown();
-                  });
-                 
-                  $('#comment').click(function(){
-                      var input = $('#input').val();
-                      $('.box').append(input + '<br>');
-                      $('#input').val('');
-                      $('.box-container').slideDown();
-                  });
-  
-                  $('#cancel').click(function(){
-                      $('input').val('');
-                  });
-  
-              
-              });
-              </script>
+          
       </div>
       <div id="tabs-3">
         <div class="list">
