@@ -159,4 +159,7 @@ body {
     flex-direction: column;
   }
 
+  .textwe{
+    margin: auto;
+  }
 }
