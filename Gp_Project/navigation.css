@@ -68,10 +68,8 @@
     .navbar li{
       float: none;
     }
-  }
-  
-  @media screen and (max-width: 700px) {
 
+    
     .navbar.responsive {position: relative;}
     .navbar.responsive .icon {
       position: absolute;
@@ -83,3 +81,4 @@
       text-align: center;
     }
   }
+  
