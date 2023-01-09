@@ -159,6 +159,9 @@ body {
     flex-direction: column;
   }
 
+  .home h1{
+    font-size: 64px;
+  }
   .textwe{
     margin: auto;
   }
