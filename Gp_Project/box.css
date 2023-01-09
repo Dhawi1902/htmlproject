@@ -135,8 +135,24 @@
 
 
   
+<<<<<<< HEAD
+=======
+  .fa:hover {
+      opacity: 0.7;
+  }
+  
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+*/
+@media screen and (min-width:700px) and (max-width: 1000px) {
+>>>>>>> 629de2d44ccca5f3798db167c460a94634d5b830
 
-
+  .appointment{
+    margin: auto;
+  }
+}
   
       
   
