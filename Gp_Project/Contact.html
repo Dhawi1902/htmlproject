@@ -24,6 +24,7 @@
       <li><a href="home.html">HOME</a></li>
       <li><a href="barber_list.html">STAFF</a></li>
       <li><a href="Contact.html">CONTACT</a></li>
+      <li><a href="feedback.html">FEEDBACK</a></li>
       <li><a href="javascript:void(0);" class="icon" onclick="myFunction()">
         <i class="material-icons">menu</i>
       </a></li>
@@ -44,7 +45,7 @@
       <div class="fakeimg">
         <p><i class="material-icons">phone</i>  0112342535</p>
         <a href="mailto: support@JerungBiru.com"><i class="material-icons"> email</i> support@JerungBiru.com</a>
-        <img src="logo2.png" alt="Avatar" style="min-width: 100px; max-width:100px; border-radius:50%; width:200px; ">
+        <p><img src="logo2.png" alt="Avatar" style="min-width: 450px; max-width:450px; width:200px; "></p>
       </div>
     </div>  
  
@@ -53,8 +54,9 @@
       <form class="contact" method="post" action="mailto: support@JerungBiru.com" enctype="text/plain">
         <h1>CONTACT US</h1>
         <p></p>
-        <input type="text" name= "name" id="name" placeholder="Name">
-        <input type="email" name = "emil" id="email" placeholder="email">
+        <input type="text" name= "name" id="name" placeholder="Name" required>
+        <input type="email" name = "email" id="email" placeholder="email" onkeydown="ValidateEmail(email.value)" required>
+        <p><span id="error"></span></p>
         <textarea name="msg" id="msg" cols="30" rows="8" placeholder="Message"></textarea>
         
         <div class="flex-end">
@@ -66,7 +68,19 @@
   </div>
   
 </div>
+<!-- 
+<script>
+function ValidateEmail(mail) 
+{
+ if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(myForm.emailAddr.value))
+  {
+    return (true)
+  }
+    document.getElementById("error" ).innerHTML = "You have entered an invalid email address!"
+    return (false)
+}
 
+</script> -->
 
 </body>
 </html>
